@@ -52,6 +52,31 @@ class TextToExcelApp(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    dark_stylesheet = """
+        QWidget {
+            background-color: #1e1e1e;
+            color: #dddddd;
+            font-family: Consolas;
+            font-size: 14px;
+        }
+        QPushButton {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+        QPushButton:hover {
+            background-color: #444;
+        }
+        QPushButton:pressed {
+            background-color: #555;
+        }
+        QLabel {
+            color: #aaa;
+        }
+    """ 
+    app.setStyleSheet(dark_stylesheet)
     window = TextToExcelApp()
     window.show()
     sys.exit(app.exec())
