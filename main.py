@@ -3,19 +3,21 @@ from PyQt6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPushButton,
     QFileDialog, QLabel, QMessageBox
 )
+from PyQt6.QtCore import Qt
 from parser import parse_text_file
 from converter import export_to_excel
-
 
 class TextToExcelApp(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Text2Excel Analyzer")
+        self.setWindowTitle("Text2Excel Converter")
         self.setGeometry(100, 100, 400, 200)
+
 
         self.layout = QVBoxLayout()
 
-        self.label = QLabel("Выберите .txt файл для анализа:")
+        self.label = QLabel("Выберите .txt файл для конвертации:")
+        self.label.setAlignment(Qt.AlignmentFlag.AlignCenter) 
         self.layout.addWidget(self.label)
 
         self.open_button = QPushButton("📂 Загрузить текстовик")
