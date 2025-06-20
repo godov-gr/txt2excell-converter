@@ -32,3 +32,10 @@ A simple and stylish desktop tool built with **Python + PyQt6** to convert `.txt
 ## Pics:
 
 ![Alt text](img/image.jpg)
+
+
+## Планы:
+
+Реализовать объединение двух текстовиком;
+drag&drop;
+Подтягивание названия файл при сохранении.
