@@ -1,7 +1,7 @@
 import sys
 from PyQt6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPushButton,
-    QFileDialog, QLabel, QMessageBox
+    QFileDialog, QLabel, QMessageBox, QTableWidget, QTableWidgetItem
 )
 from PyQt6.QtCore import Qt
 from parser import parse_text_file
