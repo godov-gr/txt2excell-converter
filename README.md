@@ -27,7 +27,7 @@ A simple and stylish desktop tool built with **Python + PyQt6** to convert `.txt
 
 3. Run the app:
     ```bash
-       pip install -r requirements.txt
+    python main.py
 
 ## Pics:
 
